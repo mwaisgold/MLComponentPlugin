@@ -1,0 +1,11 @@
+Plugin para componentes
+
+Para instalarlo:
+grails install-plugin http://github.com/mwaisgold/MLComponentPlugin/raw/master/grails-ml-components-0.1.zip
+
+Para usarlo:
+
+<ml:component code="codigoDelComponente" param1="valorParam1" param2="valorParam2" />
+
+Esto matchea a una carpeta dentro de las views/controllerName/components/codigoDelComponente/
+Y ahí busca los resultados
