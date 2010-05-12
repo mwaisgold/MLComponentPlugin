@@ -1,0 +1,27 @@
+<plugin name='ml-components' version='0.1' grailsVersion='1.2.2 &gt; *'>
+  <author>Matías Waisgold</author>
+  <authorEmail>mwaisgold@gmail.com</authorEmail>
+  <title>Plugin para poder controlar los componentes web en ML</title>
+  <description>\
+El pluggin parte de la idea de replicar los componentes en todas sus posibilidades posibles.
+La idea es tener para cada proyecto una buena configuración. Por ejemplo, para SYI la idea es 
+replicar los componentes por site, categ y perfil. Lo que va a llevar una estructura de directorios
+grails-app/views/CONTROLLER_NAME/components/COMPONENT_NAME/_SITE_CATEG_PREFIL.gsp (para poder utilizar los renders)
+Por convención cada uno de estos campos deberá tener si o sí 3 letras y no se podrá repetir los posibles valores entre uno y otro.
+Por ejemplo: NEW no puede ser categoría y perfil. Si pertence a un grupo, no puede pertenecer al otro.
+Por defecto, si no encuentra la configuración va a tomar el template llamado: _ALL_ALL_ALL.gsp dentro del componente.
+</description>
+  <documentation>http://mercadowiki.ml.com:8080/plugin/ml-components</documentation>
+  <resources>
+    <resource>BuildConfig</resource>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+    <resource>ml.components.ComponentTagLib</resource>
+  </resources>
+  <dependencies>
+    <resolvers>
+      <resolver type='grailsPlugins' name='grailsPlugins' />
+    </resolvers>
+  </dependencies>
+  <behavior />
+</plugin>

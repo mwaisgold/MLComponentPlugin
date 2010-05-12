@@ -1,0 +1,1 @@
+Full component ALL_ALL_ALL

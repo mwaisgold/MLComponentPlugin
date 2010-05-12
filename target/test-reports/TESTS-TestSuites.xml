@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="ubuntu" id="0" name="MLComponentTagLibTests" package="ml.components" tests="3" time="3.179" timestamp="2010-05-12T17:39:52">
+      <properties />
+
+      <testcase classname="ml.components.MLComponentTagLibTests" name="testSimpleComponentOK" time="1.523" />
+
+      <testcase classname="ml.components.MLComponentTagLibTests" name="testNoCodeFails" time="0.355" />
+
+      <testcase classname="ml.components.MLComponentTagLibTests" name="testDifferentParametersTemplateFails" time="0.747" />
+
+      <system-out><![CDATA[
+##teamcity[testSuiteStarted name='ml.components.MLComponentTagLibTests' locationHint='grails://className::ml.components.MLComponentTagLibTests']
+--Output from testSimpleComponentOK--
+
+##teamcity[testStarted name='testSimpleComponentOK' captureStandardOutput='false' locationHint='grails://methodName::ml.components.MLComponentTagLibTests.testSimpleComponentOK']
+(ALL|MLA)_(ALL|NEW)_(ALL|MOT)
+MLA|NEW|MOT
+components/simpleComponent/ALL_ALL_ALL
+Simple component
+
+##teamcity[testFinished name='testSimpleComponentOK' duration='1522']
+--Output from testNoCodeFails--
+
+##teamcity[testStarted name='testNoCodeFails' captureStandardOutput='false' locationHint='grails://methodName::ml.components.MLComponentTagLibTests.testNoCodeFails']
+
+##teamcity[testFinished name='testNoCodeFails' duration='355']
+--Output from testDifferentParametersTemplateFails--
+
+##teamcity[testStarted name='testDifferentParametersTemplateFails' captureStandardOutput='false' locationHint='grails://methodName::ml.components.MLComponentTagLibTests.testDifferentParametersTemplateFails']
+(ALL|MLA)_(ALL|MOT)_(ALL|NEW)
+MLA|MOT|NEW
+components/simpleComponent/ALL_ALL_ALL
+(ALL|MLA)_(ALL|MOT)
+MLA|MOT
+components/simpleComponent/ALL_ALL
+
+##teamcity[testFinished name='testDifferentParametersTemplateFails' duration='746']
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSimpleComponentOK--
+--Output from testNoCodeFails--
+--Output from testDifferentParametersTemplateFails--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

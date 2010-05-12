@@ -1,0 +1,1 @@
+Replicated component site config ALL_ALL
