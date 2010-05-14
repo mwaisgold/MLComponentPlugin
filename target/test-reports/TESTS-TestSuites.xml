@@ -1,46 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="ubuntu" id="0" name="MLComponentTagLibTests" package="ml.components" tests="3" time="3.179" timestamp="2010-05-12T17:39:52">
+  <testsuite errors="0" failures="0" hostname="ubuntu" id="0" name="ComponentTests" package="ml.components" tests="7" time="1.027" timestamp="2010-05-14T18:06:00">
       <properties />
 
-      <testcase classname="ml.components.MLComponentTagLibTests" name="testSimpleComponentOK" time="1.523" />
+      <testcase classname="ml.components.ComponentTests" name="testResolverInstanciatesOK" time="0.713" />
 
-      <testcase classname="ml.components.MLComponentTagLibTests" name="testNoCodeFails" time="0.355" />
+      <testcase classname="ml.components.ComponentTests" name="testBadCallForComponentParams" time="0.067" />
 
-      <testcase classname="ml.components.MLComponentTagLibTests" name="testDifferentParametersTemplateFails" time="0.747" />
+      <testcase classname="ml.components.ComponentTests" name="testResolveComponentNameOK" time="0.135" />
+
+      <testcase classname="ml.components.ComponentTests" name="testResolveComponentDuplicatedBySiteOK" time="0.054" />
+
+      <testcase classname="ml.components.ComponentTests" name="testResolveComponentDuplicatedBySiteAndConfigOK" time="0.0070" />
+
+      <testcase classname="ml.components.ComponentTests" name="testResolveAmbiguousDefinitionConfig" time="0.014" />
+
+      <testcase classname="ml.components.ComponentTests" name="testResolveFullComponentDefinitionOK" time="0.0040" />
 
       <system-out><![CDATA[
-##teamcity[testSuiteStarted name='ml.components.MLComponentTagLibTests' locationHint='grails://className::ml.components.MLComponentTagLibTests']
---Output from testSimpleComponentOK--
+##teamcity[testSuiteStarted name='ml.components.ComponentTests' locationHint='grails://className::ml.components.ComponentTests']
+--Output from testResolverInstanciatesOK--
 
-##teamcity[testStarted name='testSimpleComponentOK' captureStandardOutput='false' locationHint='grails://methodName::ml.components.MLComponentTagLibTests.testSimpleComponentOK']
-(ALL|MLA)_(ALL|NEW)_(ALL|MOT)
-MLA|NEW|MOT
+##teamcity[testStarted name='testResolverInstanciatesOK' captureStandardOutput='false' locationHint='grails://methodName::ml.components.ComponentTests.testResolverInstanciatesOK']
+
+##teamcity[testFinished name='testResolverInstanciatesOK' duration='712']
+--Output from testBadCallForComponentParams--
+
+##teamcity[testStarted name='testBadCallForComponentParams' captureStandardOutput='false' locationHint='grails://methodName::ml.components.ComponentTests.testBadCallForComponentParams']
+
+##teamcity[testFinished name='testBadCallForComponentParams' duration='66']
+--Output from testResolveComponentNameOK--
+
+##teamcity[testStarted name='testResolveComponentNameOK' captureStandardOutput='false' locationHint='grails://methodName::ml.components.ComponentTests.testResolveComponentNameOK']
 components/simpleComponent/ALL_ALL_ALL
-Simple component
 
-##teamcity[testFinished name='testSimpleComponentOK' duration='1522']
---Output from testNoCodeFails--
+##teamcity[testFinished name='testResolveComponentNameOK' duration='135']
+--Output from testResolveComponentDuplicatedBySiteOK--
 
-##teamcity[testStarted name='testNoCodeFails' captureStandardOutput='false' locationHint='grails://methodName::ml.components.MLComponentTagLibTests.testNoCodeFails']
+##teamcity[testStarted name='testResolveComponentDuplicatedBySiteOK' captureStandardOutput='false' locationHint='grails://methodName::ml.components.ComponentTests.testResolveComponentDuplicatedBySiteOK']
+components/replicatedComponentSite/MLA_ALL_ALL
+components/replicatedComponentSite/MLB_ALL_ALL
 
-##teamcity[testFinished name='testNoCodeFails' duration='355']
---Output from testDifferentParametersTemplateFails--
+##teamcity[testFinished name='testResolveComponentDuplicatedBySiteOK' duration='54']
+--Output from testResolveComponentDuplicatedBySiteAndConfigOK--
 
-##teamcity[testStarted name='testDifferentParametersTemplateFails' captureStandardOutput='false' locationHint='grails://methodName::ml.components.MLComponentTagLibTests.testDifferentParametersTemplateFails']
-(ALL|MLA)_(ALL|MOT)_(ALL|NEW)
-MLA|MOT|NEW
-components/simpleComponent/ALL_ALL_ALL
-(ALL|MLA)_(ALL|MOT)
-MLA|MOT
-components/simpleComponent/ALL_ALL
+##teamcity[testStarted name='testResolveComponentDuplicatedBySiteAndConfigOK' captureStandardOutput='false' locationHint='grails://methodName::ml.components.ComponentTests.testResolveComponentDuplicatedBySiteAndConfigOK']
+components/replicatedComponentSiteConfig/MLA_ALL_ALL
+components/replicatedComponentSiteConfig/MLA_MOT_ALL
 
-##teamcity[testFinished name='testDifferentParametersTemplateFails' duration='746']
+##teamcity[testFinished name='testResolveComponentDuplicatedBySiteAndConfigOK' duration='7']
+--Output from testResolveAmbiguousDefinitionConfig--
+
+##teamcity[testStarted name='testResolveAmbiguousDefinitionConfig' captureStandardOutput='false' locationHint='grails://methodName::ml.components.ComponentTests.testResolveAmbiguousDefinitionConfig']
+
+##teamcity[testFinished name='testResolveAmbiguousDefinitionConfig' duration='14']
+--Output from testResolveFullComponentDefinitionOK--
+
+##teamcity[testStarted name='testResolveFullComponentDefinitionOK' captureStandardOutput='false' locationHint='grails://methodName::ml.components.ComponentTests.testResolveFullComponentDefinitionOK']
+components/fullComponent/MLA_MOT_NEW
+
+##teamcity[testFinished name='testResolveFullComponentDefinitionOK' duration='4']
 ]]></system-out>
 
-      <system-err><![CDATA[--Output from testSimpleComponentOK--
---Output from testNoCodeFails--
---Output from testDifferentParametersTemplateFails--
+      <system-err><![CDATA[--Output from testResolverInstanciatesOK--
+--Output from testBadCallForComponentParams--
+--Output from testResolveComponentNameOK--
+--Output from testResolveComponentDuplicatedBySiteOK--
+--Output from testResolveComponentDuplicatedBySiteAndConfigOK--
+--Output from testResolveAmbiguousDefinitionConfig--
+--Output from testResolveFullComponentDefinitionOK--
 ]]></system-err>
 
   </testsuite>

@@ -1,7 +1,7 @@
 Plugin para componentes
 
 Para instalarlo:
-grails install-plugin http://github.com/mwaisgold/MLComponentPlugin/raw/master/grails-ml-components-0.1.zip
+grails install-plugin http://github.com/mwaisgold/MLComponentPlugin/raw/master/grails-ml-components-1.0-Beta.zip
 
 Para usarlo:
 

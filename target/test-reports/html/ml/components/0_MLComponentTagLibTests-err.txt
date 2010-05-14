@@ -1,4 +1,0 @@
---Output from testSimpleComponentOK--
---Output from testNoCodeFails--
---Output from testDifferentParametersTemplateFails--
-
