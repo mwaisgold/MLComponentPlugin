@@ -1,6 +1,6 @@
 class MlComponentsGrailsPlugin {
     // the plugin version
-    def version = "0.1"
+    def version = "1.0-Beta"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.2.2 > *"
     // the other plugins this plugin depends on

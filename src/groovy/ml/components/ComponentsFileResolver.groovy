@@ -49,11 +49,9 @@ class ComponentsFileResolver {
         def componentMatch = explodeParametersList(parameters, "_"){
           "(ALL|${it})"
         }
-        println componentMatch
         def componentMatchRank = explodeParametersList(parameters,"|"){
           it
         }
-        println componentMatchRank
 		dirComponent.eachFile {
 			def template = it.name[evalRange]
 			if ( template =~ /${componentMatch}/){              

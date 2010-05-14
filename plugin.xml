@@ -1,4 +1,4 @@
-<plugin name='ml-components' version='0.1' grailsVersion='1.2.2 &gt; *'>
+<plugin name='ml-components' version='1.0-Beta' grailsVersion='1.2.2 &gt; *'>
   <author>Matías Waisgold</author>
   <authorEmail>mwaisgold@gmail.com</authorEmail>
   <title>Plugin para poder controlar los componentes web en ML</title>
