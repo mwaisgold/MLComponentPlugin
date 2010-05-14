@@ -38,7 +38,6 @@ class ComponentTagLib {
      def resolver = getComponentResolver(attrs)
      def controller = RequestContextHolder.currentRequestAttributes().controllerName
      def template = resolver.resolveComponentDir(controller, code, parseValues(attrs))
-     println template
      out << render(template: template)
 
   }
